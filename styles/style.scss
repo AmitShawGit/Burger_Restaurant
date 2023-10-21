@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import './responsive';
+@import './variable';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    font-weight: 700;
+    font-size: 60px;
+    padding-bottom: 2rem;
+    @include xxl{
+        font-size: 50px;
+    }
+}
+.sub-text{
+    font-size: 26px;
+    @include xxl{
+        font-size: 20px;
+    }
+}
+.text-primary{
+    color: $primary !important;
+}
+.btn-primary {
+    background-color: $primary;
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: none;
+    padding: 10px 100px;
+    border-radius: 35px;
+    border: 1px solid $primary;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 20px;
+
+    @include xxl {
+
+        padding: 7px 32px;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $primary;
+    }
+}
+
+.sapce-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/*header*/
+.headerbg {
+    background: url(../img/headerbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include xxl {
+        background-position: center;
+    }
+}
+
+/*Navbar*/
+.navbar {
+    background: linear-gradient(360deg, rgb(255 255 255 / 0%) 0%, rgba(45, 39, 38, 0.822) 86%);
+
+    @include xxl {
+        position: absolute;
+        width: 100%;
+        background: $black;
+        text-align: center;
+
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0;
+    }
+
+    .navbar-brand {
+        img {
+            width: 65px;
+
+            @include xxl {
+                width: 48px;
+            }
+        }
+    }
+
+    .ri-menu-3-line {
+        @include xxl {
+            color: $white;
+        }
+    }
+
+    .nav-item {
+        font-weight: 600;
+        margin-top: 10px;
+
+        .nav-link {
+            text-transform: capitalize;
+            color: $white;
+            font-size: 18px;
+        }
+    }
+}
+
+/*Hero Section*/
+.hero-section{
+.hero-heading {
+    margin-top: 5rem;
+    font-size: 75px;
+
+    @include md {
+        font-size: 45px;
+    }
+    @include lg{
+        font-size: 60px;
+    }
+    @include xxl{
+        font-size: 55px;
+    }
+}
+
+.hero-description {
+    font-size: 26px;
+
+    @include md {
+        font-size: 16px;
+        margin-top: 22px;
+    }
+    @include lg{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    @include xxl{
+        font-size: 16px;
+        margin-top: 40px;
+    }
+   
+}
+.btn-primary{
+    @include md{
+        margin-top: 2rem !important;
+    }
+}
+}
+
+/*chef-section*/
+.chef-section{
+    background: $bg-light;
+    position: relative;
+    .chef-name{
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+    .designation{
+        font-size: 20px;
+    }
+    .lasun{
+        position: absolute;
+        top: 10%;
+        @include xxl{
+            width: 60px;
+        }
+        @include md{
+            width: 50px;
+        }
+    }
+    .burger{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        @include xxl{
+            width: 60px;
+        }
+        @include md{
+            width: 50px;
+        }
+    }
+    .bhujiya{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        @include xxl{
+            width: 60px;
+        }
+        @include md{
+            width: 50px;
+        }
+    }
+    .chilli{
+        position: absolute;
+        top: 60%;
+        right: 0;
+        @include xxl{
+            width: 60px;
+        }
+        @include md{
+            width: 50px;
+        }
+    }
+    .leaf{
+        position: absolute;
+        left: 35%;
+        bottom: 3%;
+        @include xxl{
+            width: 60px;
+        }
+        @include md{
+            width: 50px;
+        }
+    }
+    .leaf2{
+        position: absolute;
+        right: 35%;
+        bottom: 5%;
+        @include xxl{
+            width: 60px;
+        }
+        @include md{
+            width: 50px;
+        }
+    }
+    
+}
