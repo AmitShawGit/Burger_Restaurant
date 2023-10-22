@@ -69,6 +69,55 @@ h6 {
         border: 1px solid $primary;
     }
 }
+.btn-primary {
+    background-color: $primary;
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: none;
+    padding: 10px 100px;
+    border-radius: 35px;
+    border: 1px solid $primary;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 20px;
+
+    @include xxl {
+
+        padding: 7px 32px;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $primary;
+        color: $primary;
+    }
+}
+.btn-secondary {
+    background-color: $bg-light;
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: none;
+    padding: 10px 100px;
+    border-radius: 35px;
+    border: 1px solid $bg-light;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 20px;
+color: $primary;
+    @include xxl {
+
+        padding: 7px 32px;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $bg-light;
+    }
+}
 
 .sapce-around {
     justify-content: space-around;
@@ -77,15 +126,16 @@ h6 {
 .space-between {
     justify-content: space-between;
 }
-
+.align-center{
+    align-items: center;
+}
 /*header*/
 .headerbg {
     background: url(../img/headerbg.png);
     background-repeat: no-repeat;
-    background-size: cover;
-
     @include xxl {
         background-position: center;
+        background-size: cover;
     }
 }
 
@@ -190,9 +240,11 @@ h6 {
         top: 10%;
         @include xxl{
             width: 60px;
+            top: 5%;
         }
         @include md{
             width: 50px;
+            top: 5%;
         }
     }
     .burger{
@@ -251,4 +303,106 @@ h6 {
         }
     }
     
+}
+
+/*Best Burger Secton*/
+.best-burger-section{
+    background-color: $bg-orange;
+    @include lg{
+        text-align: center;
+    }
+}
+/*Big burger*/
+.big-burger-section{
+    background-color: $bg-light;
+    position: relative;
+    overflow: hidden;
+    @include lg{
+        text-align: center;
+    }
+    .chilli{
+        position: absolute;
+        top: 30%;
+        left: -1%;
+        transform: rotate(53deg);
+        @include xxl{
+            width: 50px;
+        }
+    }
+    .burger{
+        position: absolute;
+        top: 5%;
+        left: 40%;
+        @include xxl{
+            width: 50px;
+        }
+    }
+    .lasun{
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        @include xl{
+            width: 50px;
+            top: 45%;
+            left: 50%;
+        }
+        @include xxl{
+            width: 50px;
+    bottom: 15%;
+    left: 20%;
+        }
+    }
+    .leaf2{
+        position: absolute;
+        bottom: 5%;
+        right: 50%;
+        @include xxl{
+            width: 50px;
+            left: 5%;
+        }
+    }
+    .leaf{
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        @include xxl{
+            width: 50px;
+            right: -2%;
+        }
+    }
+    .bhujiya{
+        position: absolute;
+        bottom: 5%;
+        right: -1%;
+        transform: scaleX(-1);
+        @include xxl{
+            width: 50px;
+        }
+    }
+}
+/**statistic-section**/
+.statistic-section{
+    background-color: $primary;
+    text-align: center;
+    .card-center{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .counter-card{
+        border: 5px solid $white;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .counter-text{
+            font-size: 75px;
+         
+        }
+    }
 }
