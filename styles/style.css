@@ -139,12 +139,10 @@ h6 {
 /*header*/
 .headerbg {
   background: url(../img/headerbg.png);
-  background-repeat: no-repeat;
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .headerbg {
     background-position: center;
-    background-size: cover;
   }
 }
 
@@ -456,4 +454,87 @@ h6 {
 }
 .statistic-section .counter-card .counter-text {
   font-size: 75px;
+}
+
+/*package-section*/
+.package-section {
+  background-color: #f6eedf;
+  position: relative;
+  overflow: hidden;
+}
+.package-section .card {
+  border: none;
+  z-index: 2;
+}
+.package-section .card .package-bold {
+  font-weight: 700;
+}
+.package-section .card .pack-desc {
+  font-size: 20px;
+}
+.package-section .lasun {
+  position: absolute;
+  right: -1%;
+  top: 36%;
+}
+@media (max-width: 992px) {
+  .package-section .lasun {
+    width: 50px;
+  }
+}
+.package-section .chilli {
+  position: absolute;
+  top: 25%;
+  left: -1%;
+  transform: scaleX(-1);
+}
+@media (max-width: 992px) {
+  .package-section .chilli {
+    width: 50px;
+  }
+}
+.package-section .bhujiya {
+  position: absolute;
+  right: 0%;
+  bottom: 9%;
+  transform: scaleX(-1);
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .package-section .bhujiya {
+    width: 50px;
+    right: 1%;
+    bottom: 2%;
+  }
+}
+.package-section .leaf {
+  position: absolute;
+  top: 7%;
+  left: 19%;
+}
+@media (max-width: 992px) {
+  .package-section .leaf {
+    width: 50px;
+    left: 2%;
+  }
+}
+.package-section .leaf2 {
+  position: absolute;
+  bottom: 5%;
+  left: -1%;
+}
+@media (max-width: 992px) {
+  .package-section .leaf2 {
+    width: 50px;
+  }
+}
+.package-section .burger {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+@media (max-width: 992px) {
+  .package-section .burger {
+    width: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

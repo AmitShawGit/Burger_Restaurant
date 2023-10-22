@@ -28,23 +28,29 @@ h6 {
     margin: 0;
     padding: 0;
 }
-.heading{
+
+.heading {
     font-weight: 700;
     font-size: 60px;
     padding-bottom: 2rem;
-    @include xxl{
+
+    @include xxl {
         font-size: 50px;
     }
 }
-.sub-text{
+
+.sub-text {
     font-size: 26px;
-    @include xxl{
+
+    @include xxl {
         font-size: 20px;
     }
 }
-.text-primary{
+
+.text-primary {
     color: $primary !important;
 }
+
 .btn-primary {
     background-color: $primary;
     box-shadow: 0 0 0 0;
@@ -69,6 +75,7 @@ h6 {
         border: 1px solid $primary;
     }
 }
+
 .btn-primary {
     background-color: $primary;
     box-shadow: 0 0 0 0;
@@ -94,6 +101,7 @@ h6 {
         color: $primary;
     }
 }
+
 .btn-secondary {
     background-color: $bg-light;
     box-shadow: 0 0 0 0;
@@ -105,7 +113,8 @@ h6 {
     font-weight: 600;
     text-transform: capitalize;
     font-size: 20px;
-color: $primary;
+    color: $primary;
+
     @include xxl {
 
         padding: 7px 32px;
@@ -126,16 +135,16 @@ color: $primary;
 .space-between {
     justify-content: space-between;
 }
-.align-center{
+
+.align-center {
     align-items: center;
 }
+
 /*header*/
 .headerbg {
     background: url(../img/headerbg.png);
-    background-repeat: no-repeat;
-    @include xxl {
+    @include xl {
         background-position: center;
-        background-size: cover;
     }
 }
 
@@ -184,212 +193,256 @@ color: $primary;
 }
 
 /*Hero Section*/
-.hero-section{
-.hero-heading {
-    margin-top: 5rem;
-    font-size: 75px;
+.hero-section {
+    .hero-heading {
+        margin-top: 5rem;
+        font-size: 75px;
 
-    @include md {
-        font-size: 45px;
-    }
-    @include lg{
-        font-size: 60px;
-    }
-    @include xxl{
-        font-size: 55px;
-    }
-}
+        @include md {
+            font-size: 45px;
+        }
 
-.hero-description {
-    font-size: 26px;
+        @include lg {
+            font-size: 60px;
+        }
 
-    @include md {
-        font-size: 16px;
-        margin-top: 22px;
+        @include xxl {
+            font-size: 55px;
+        }
     }
-    @include lg{
-        font-size: 20px;
-        margin-top: 30px;
+
+    .hero-description {
+        font-size: 26px;
+
+        @include md {
+            font-size: 16px;
+            margin-top: 22px;
+        }
+
+        @include lg {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        @include xxl {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+
     }
-    @include xxl{
-        font-size: 16px;
-        margin-top: 40px;
+
+    .btn-primary {
+        @include md {
+            margin-top: 2rem !important;
+        }
     }
-   
-}
-.btn-primary{
-    @include md{
-        margin-top: 2rem !important;
-    }
-}
 }
 
 /*chef-section*/
-.chef-section{
+.chef-section {
     background: $bg-light;
     position: relative;
-    .chef-name{
+
+    .chef-name {
         font-weight: 700;
         padding-top: 1rem;
     }
-    .designation{
+
+    .designation {
         font-size: 20px;
     }
-    .lasun{
+
+    .lasun {
         position: absolute;
         top: 10%;
-        @include xxl{
+
+        @include xxl {
             width: 60px;
             top: 5%;
         }
-        @include md{
+
+        @include md {
             width: 50px;
             top: 5%;
         }
     }
-    .burger{
+
+    .burger {
         position: absolute;
         top: 10%;
         right: 0;
-        @include xxl{
+
+        @include xxl {
             width: 60px;
         }
-        @include md{
+
+        @include md {
             width: 50px;
         }
     }
-    .bhujiya{
+
+    .bhujiya {
         position: absolute;
         top: 30%;
         left: 0;
-        @include xxl{
+
+        @include xxl {
             width: 60px;
         }
-        @include md{
+
+        @include md {
             width: 50px;
         }
     }
-    .chilli{
+
+    .chilli {
         position: absolute;
         top: 60%;
         right: 0;
-        @include xxl{
+
+        @include xxl {
             width: 60px;
         }
-        @include md{
+
+        @include md {
             width: 50px;
         }
     }
-    .leaf{
+
+    .leaf {
         position: absolute;
         left: 35%;
         bottom: 3%;
-        @include xxl{
+
+        @include xxl {
             width: 60px;
         }
-        @include md{
+
+        @include md {
             width: 50px;
         }
     }
-    .leaf2{
+
+    .leaf2 {
         position: absolute;
         right: 35%;
         bottom: 5%;
-        @include xxl{
+
+        @include xxl {
             width: 60px;
         }
-        @include md{
+
+        @include md {
             width: 50px;
         }
     }
-    
+
 }
 
 /*Best Burger Secton*/
-.best-burger-section{
+.best-burger-section {
     background-color: $bg-orange;
-    @include lg{
+
+    @include lg {
         text-align: center;
     }
 }
+
 /*Big burger*/
-.big-burger-section{
+.big-burger-section {
     background-color: $bg-light;
     position: relative;
     overflow: hidden;
-    @include lg{
+
+    @include lg {
         text-align: center;
     }
-    .chilli{
+
+    .chilli {
         position: absolute;
         top: 30%;
         left: -1%;
         transform: rotate(53deg);
-        @include xxl{
+
+        @include xxl {
             width: 50px;
         }
     }
-    .burger{
+
+    .burger {
         position: absolute;
         top: 5%;
         left: 40%;
-        @include xxl{
+
+        @include xxl {
             width: 50px;
         }
     }
-    .lasun{
+
+    .lasun {
         position: absolute;
         bottom: 5%;
         left: 10%;
-        @include xl{
+
+        @include xl {
             width: 50px;
             top: 45%;
             left: 50%;
         }
-        @include xxl{
+
+        @include xxl {
             width: 50px;
-    bottom: 15%;
-    left: 20%;
+            bottom: 15%;
+            left: 20%;
         }
     }
-    .leaf2{
+
+    .leaf2 {
         position: absolute;
         bottom: 5%;
         right: 50%;
-        @include xxl{
+
+        @include xxl {
             width: 50px;
             left: 5%;
         }
     }
-    .leaf{
+
+    .leaf {
         position: absolute;
         top: 10%;
         right: 5%;
-        @include xxl{
+
+        @include xxl {
             width: 50px;
             right: -2%;
         }
     }
-    .bhujiya{
+
+    .bhujiya {
         position: absolute;
         bottom: 5%;
         right: -1%;
         transform: scaleX(-1);
-        @include xxl{
+
+        @include xxl {
             width: 50px;
         }
     }
 }
+
 /**statistic-section**/
-.statistic-section{
+.statistic-section {
     background-color: $primary;
     text-align: center;
-    .card-center{
+
+    .card-center {
         display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
     }
-    .counter-card{
+
+    .counter-card {
         border: 5px solid $white;
         border-radius: 50%;
         width: 300px;
@@ -400,9 +453,96 @@ color: $primary;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        .counter-text{
+
+        .counter-text {
             font-size: 75px;
-         
+
+        }
+    }
+}
+
+/*package-section*/
+.package-section {
+    background-color: $bg-light;
+    position: relative;
+    overflow: hidden;
+
+    .card {
+        border: none;
+        z-index: 2;
+
+        .package-bold {
+            font-weight: 700;
+        }
+
+        .pack-desc {
+            font-size: 20px;
+        }
+    }
+
+    .lasun {
+        position: absolute;
+        right: -1%;
+        top: 36%;
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .chilli {
+        position: absolute;
+        top: 25%;
+        left: -1%;
+        transform: scaleX(-1);
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .bhujiya {
+        position: absolute;
+        right: 0%;
+        bottom: 9%;
+        transform: scaleX(-1);
+        z-index: 1;
+
+        @include xxl {
+            width: 50px;
+            right: 1%;
+            bottom: 2%;
+        }
+    }
+
+    .leaf {
+        position: absolute;
+        top: 7%;
+        left: 19%;
+
+        @include xxl {
+            width: 50px;
+            left: 2%;
+        }
+    }
+
+    .leaf2 {
+        position: absolute;
+        bottom: 5%;
+        left: -1%;
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .burger {
+        position: absolute;
+        right: 5%;
+        top: 3%;
+
+        @include xxl {
+            width: 50px;
         }
     }
 }
