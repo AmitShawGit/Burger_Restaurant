@@ -37,8 +37,9 @@ h6 {
     @include xxl {
         font-size: 50px;
     }
-    @include lg{
-        font-size:35px;
+
+    @include lg {
+        font-size: 35px;
     }
 }
 
@@ -76,32 +77,6 @@ h6 {
     &:hover {
         background-color: transparent;
         border: 1px solid $primary;
-    }
-}
-
-.btn-primary {
-    background-color: $primary;
-    box-shadow: 0 0 0 0;
-    border: none;
-    outline: none;
-    padding: 10px 100px;
-    border-radius: 35px;
-    border: 1px solid $primary;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-size: 20px;
-
-    @include xxl {
-
-        padding: 7px 32px;
-        text-transform: capitalize;
-        font-size: 15px;
-    }
-
-    &:hover {
-        background-color: transparent;
-        border: 1px solid $primary;
-        color: $primary;
     }
 }
 
@@ -146,6 +121,7 @@ h6 {
 /*header*/
 .headerbg {
     background: url(../img/headerbg.png);
+
     @include xl {
         background-position: center;
     }
@@ -550,19 +526,126 @@ h6 {
         }
     }
 }
+
 /*Review Section*/
-.review-section{
-    background-image: radial-gradient(circle, #fb37372b 0%, #f64b3c67 8%),url(../img/bgmiddle.png);
+.review-section {
+    background-image: radial-gradient(circle, #fb37372b 0%, #f64b3c67 8%), url(../img/bgmiddle.png);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-position: center;
     background-size: cover;
-    .review{
+
+    .review {
         font-size: 25px;
-        @include lg{
-        font-size: 20px;
+
+        @include lg {
+            font-size: 20px;
+        }
     }
 }
+
+/*Email Section*/
+.email-section {
+    background-color: $bg-light;
+    position: relative;
+    overflow: hidden;
+
+    .form-group {
+        position: relative;
+
+        .form-control {
+            padding: 15px;
+            border-radius: 35px;
+
+            @include xxl {
+                padding: 7px;
+            }
+        }
+
+        .btn-send {
+            position: absolute;
+            right: 0%;
+            top: 1%;
+            border-radius: 0 35px 35px 0px;
+
+            &:hover {
+                background-color: $primary;
+
+            }
+        }
+    }
+
+    .lasun {
+        position: absolute;
+        bottom: 0%;
+        right: 3%;
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .bhujiya {
+        position: absolute;
+        bottom: -10%;
+        left: 3%;
+
+        @include xxl {
+            width: 50px;
+            bottom: 0;
+        }
+    }
+
+    .leaf3 {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .chilli {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .burger {
+        position: absolute;
+        top: 7%;
+        right: -2%;
+        transform: scaleX(-1);
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .leaf {
+        position: absolute;
+        top: 7%;
+        left: 3%;
+
+        @include xxl {
+            width: 50px;
+        }
+    }
+
+    .leaf2 {
+        position: absolute;
+        top: 45%;
+        left: 2%;
+
+        @include xxl {
+            width: 50px;
+        }
+    }
 }
