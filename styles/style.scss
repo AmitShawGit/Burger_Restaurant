@@ -106,7 +106,7 @@ h6 {
     }
 }
 
-.sapce-around {
+.space-around {
     justify-content: space-around;
 }
 
@@ -647,5 +647,33 @@ h6 {
         @include xxl {
             width: 50px;
         }
+    }
+}
+
+/*footer*/
+.footer-section {
+    background-color: $black;
+    color: $white;
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    .icon {
+        background: $white;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: $black;
+    }
+    .footer-title{
+        @include xl{
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .footer-links{
+        padding: 2% 0;
     }
 }
