@@ -1,13 +1,19 @@
 let tl = gsap.timeline();
-let src = gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
-let navbar = document.getElementsByClassName('navbar');
 
-console.log(window.scrollY);
-console.log(navbar);
-if(window.scrollY < 100){
-    navbar.classList.add("sticky")
-}
-else{
-    navbar.classList.remove("sticky")
-}
+tl.from(".hero-heading , .hero-description , .btn",{
+    y:500,
+    stagger:1,
+    opacity:0
+});
+
+tl.from(" #ourChef ", {
+    y: 500,
+    ease: 'power4.out',
+    scrollTrigger: {
+        trigger: ".heading",
+        markers: true,
+   
+    }
+})
